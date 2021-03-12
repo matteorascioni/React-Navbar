@@ -25,6 +25,7 @@
     animation: scale 4s linear infinite;
 }
 
+/* Animations */
 @keyframes border {
     0% {
         border-radius: 0px;
