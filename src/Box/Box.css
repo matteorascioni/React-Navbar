@@ -1,0 +1,56 @@
+.box {
+    padding: 2rem;
+}
+
+.box__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 70px;
+    border-radius: 5px;
+    animation: border 3s linear infinite;
+}
+
+.box__body > span {
+    font-size: 2rem;
+    font-weight: bold;
+    background: url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    color: transparent;
+    animation: scale 4s linear infinite;
+}
+
+@keyframes border {
+    0% {
+        border-radius: 0px;
+        box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.0);
+
+    }
+    50% {
+        border-radius: 10px;
+        box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        border-radius: 0px;
+        box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.0);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    } 
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+
